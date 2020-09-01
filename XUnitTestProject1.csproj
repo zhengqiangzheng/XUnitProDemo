@@ -16,6 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="data\names.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="data\names1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="data\names2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="data\scores.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

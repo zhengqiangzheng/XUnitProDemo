@@ -111,7 +111,9 @@ C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp
 C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\git2-106a5f2.pdb
 C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\git2-106a5f2.dll
 C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\git2-106a5f2.pdb
-C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\obj\Debug\netcoreapp3.1\XUnitTestProject1.csproj.CoreCompileInputs.cache
 C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\obj\Debug\netcoreapp3.1\XUnitTestProject1.csprojAssemblyReference.cache
 C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\data\scores.csv
 C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\data\spreadsheet1.csv
+C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\data\names.csv
+C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\data\names1.txt
+C:\Users\v-qiazhe\source\repos\testcsharp\XUnitTestProject1\bin\Debug\netcoreapp3.1\data\names2.txt

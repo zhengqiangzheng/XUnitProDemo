@@ -72,6 +72,46 @@ namespace XUnitTestProject1
 
 
         }
+        [Fact]
+        public void mutiplesourcelinqtest()
+        {
+            var scores = File.ReadAllLines(@"data/scores.csv");
+            var names = File.ReadAllLines(@"data/names.csv");
+            var res = from score in scores
+                      let num = score.Split(',')
+                      from name in names
+                      let correspnum = name.Split(',')
+                      where Convert.ToInt32(num[0]) == Convert.ToInt32(correspnum[2])
+                      select new Student
+                      {
+                          FirstName = name.Split(',')[0],
+                          LastName = name.Split(',')[1],
+                          ID = Convert.ToInt32(name.Split(',').LastOrDefault()),
+                          ExamScores = (from x in score.Split(',').Skip(1)
+                                        select Convert.ToInt32(x)
+                          ).ToList()
+                      };
+        }
+
+        [Fact]
+        public void GroupTest()
+        {
+            var names1 = File.ReadAllLines(@"data/names1.txt");
+            var names2 = File.ReadAllLines(@"data/names2.txt");
+            var mergequery = names1.Union(names2);
+            var groupres1 = mergequery.GroupBy(name => name.Split(',')[0][0]
+            , (key, g) => new { GroupId = key, res = g.ToList() }
+            ).OrderBy(x => x.GroupId).ToList();
+
+            var groupres2 = from x in mergequery
+                            group x by x.Split(',')[0][0] into g
+                            orderby g.Key
+                            select g;
+
+            Dictionary<int, string> dic = new Dictionary<int, string>() { [1]="1"};
+
+
+        }
         private IEnumerable<FileInfo> GetFiles(string v)
         {
             if (!Directory.Exists(v))
